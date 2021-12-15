@@ -1,0 +1,17 @@
+.App {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  margin: 0 25px;
+}
+
+.image-list {
+  display: flex;
+  flex-direction: row wrap;
+  justify-content: space-evenly;
+}
+
+.image-list img {
+  display: block;
+  flex: 0 1 auto;
+  max-width: 250px;
+}
