@@ -3,24 +3,6 @@ import "animate.css";
 import _ from "lodash";
 import { useState } from "react";
 
-class Examples {
-  constructor(assets) {
-    this.assets = assets;
-    console.log("Examples()", { assets: assets });
-  }
-
-  // https://www.linkedin.com/learning/learning-react-js-5/understanding-array-destructuring
-  arrayDestructuring() {
-    const [first, second, third] = this.assets.imageSrcs;
-
-    console.log("arrayDestructuring()", {
-      first: first,
-      second: second,
-      third: third
-    });
-  }
-}
-
 export default function App() {
   // https://www.linkedin.com/learning/learning-react-js-5/using-usestate
   const [status, setStatus] = useState("Open");
@@ -34,11 +16,6 @@ export default function App() {
       "https://i.pinimg.com/474x/9e/b4/21/9eb421bab753d13a7cd15cd73bced5ee--paul-blart-mall-cop-meme-meme.jpg"
     ]
   };
-
-  const ex = new Examples(assets);
-  ex.arrayDestructuring();
-
-  //const nameOf = (f) => f.toString().replace(/[ |\(\)=>]/g, "");
 
   function Headers({ assets }) {
     return (
