@@ -1,7 +1,7 @@
 import "./styles.css";
 import "animate.css";
 import _ from "lodash";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function App() {
   // https://www.linkedin.com/learning/learning-react-js-5/using-usestate
@@ -58,6 +58,11 @@ export default function App() {
       </div>
     );
   }
+
+  // https://www.linkedin.com/learning/learning-react-js-5/updating-with-the-useeffect-dependency-array
+  useEffect(() => {
+    console.log("useEffect():", assets);
+  });
 
   return <Hello assets={assets} />;
 }
