@@ -5,6 +5,7 @@
 }
 
 .image-list {
+  margin: 25px 0;
   display: flex;
   flex-direction: row wrap;
   justify-content: space-evenly;
